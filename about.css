@@ -1,0 +1,110 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-family: sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+*{
+    text-decoration: none;
+}
+
+:root {
+    --color--black: #040114;
+    --font-family--body: Inter, sans-serif;
+    --color--gray-4: #e1e0e9;
+    --font-family--heading: "Nohemi Vf", sans-serif;
+    --color--heading: var(--color--white);
+    --color--gray-3: #252332;
+    --border-radius--border-radius: 20px;
+    --color--gray-1: #070417;
+    --color--primary-1: #7768d2;
+    --color--white: white;
+    --color--primary-2: #a535c5;
+    --color--gray-2: #08051d;
+    --border-radius--lg: 50px;
+    --color--primary-3: #bf95f3;
+    --color--primary-4: #f2c2f9;
+    --border-radius--sm: 10px;
+    --color--transparent: transparent;
+  }
+
+.aboutsection{
+    background-color: #040114;
+    height: auto;
+    padding: 20px;
+    padding-left: 15vh;
+    padding-right: 15vh;
+}
+
+.logo_img{
+    height: 35px;
+    padding-top: 10px;
+}
+
+.logotext{
+    font-size: 35px;
+    font-weight: bolder;
+    color: white;
+}
+
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.home, .about, .pages, .services{
+    padding: 20px;
+    color: var(--color--gray-4);
+}
+
+.navbtn{
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    background: none;
+    color: white;
+    border-color: white;
+}
+
+/* cyber-container-start */
+.cyber-container{
+    display: flex;
+    align-items: center;
+    margin-top: 3vh;
+}
+.cyber-head{
+    color: white;
+    font-size: 70px;
+}
+.cyber-para{
+    color: var(--color--gray-4);
+    font-size: 20px;
+    padding-right: 40px;
+}
+.cyber-list{
+    display: flex;
+    align-items: center;
+    margin-top: 15vh;
+    margin-bottom: 5vh;
+    padding-right: 50px;
+    color: var(--color--gray-4);
+    bottom: 0;
+}
+.cyber-img{
+    height: 65vh;
+    border-radius: 30px;
+    padding: 1rem;
+    margin-top: 5vh ;
+}
+.tick-img{
+    padding-right: 10px;
+}
+/* cyber-container-end */
