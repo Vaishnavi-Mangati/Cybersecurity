@@ -1,17 +1,28 @@
 html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
+    font-family: inter;
     font-family: sans-serif;
 }
-
 body{
     margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #040114;
+    height: auto;
 }
-
+.aboutsection{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
 *{
     text-decoration: none;
+    box-sizing: border-box;
 }
-
+a{
+    color: var(--color--gray-4);
+}
 :root {
     --color--black: #040114;
     --font-family--body: Inter, sans-serif;
@@ -31,54 +42,96 @@ body{
     --border-radius--sm: 10px;
     --color--transparent: transparent;
   }
-
-.aboutsection{
-    background-color: #040114;
-    height: auto;
-    padding: 20px;
-    padding-left: 15vh;
-    padding-right: 15vh;
-}
-
 .logo_img{
-    height: 35px;
     padding-top: 10px;
 }
-
 .logotext{
     font-size: 35px;
     font-weight: bolder;
     color: white;
 }
-
+.home, .about, .pages, .services{
+    padding: 5px 15px;
+}
+.navbar{
+    background-color: #0000;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
 .navdiv{
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 20px;
-}
-
-.home, .about, .pages, .services{
-    padding: 20px;
-    color: var(--color--gray-4);
-}
-
-.navbtn{
-    padding: 10px;
-    border-radius: 20px;
-    font-size: 20px;
-    padding-right: 30px;
     padding-left: 30px;
-    background: none;
-    color: white;
-    border-color: white;
+    padding-right: 30px;
+    
 }
-
+.navlist ul{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+a:hover{
+    color: var(--color--primary-1);
+}
+a.active{
+    color: var(--color--primary-1);
+}
+.dropdown_menu{
+    display: flex;
+    align-items: center;
+    display: block;
+    position: relative;
+    left: 0;
+    background-color: var(--color--black);
+}
+.dropdown_menu ul{
+    
+    display: block;
+}
+.btn{
+    padding: 10px 30px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    font-size: 20px;
+    border: none;
+    background-color: var(--color--black);
+    color: white;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn::after{
+    content: '';
+    position: absolute;
+    height: 106%;
+    width: 103%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-image:linear-gradient(135deg, var(--color--primary-2) 40%, var(--color--primary-3));
+    z-index: -1;
+}
 /* cyber-container-start */
 .cyber-container{
     display: flex;
     align-items: center;
     margin-top: 3vh;
+
+}
+hr {
+    margin-top: 8vh;
+    height: 0.1rem;
+    border: 0;
+    border-top: 1px solid var(--color--gray-3);
+
 }
 .cyber-head{
     color: white;
@@ -108,3 +161,168 @@ body{
     padding-right: 10px;
 }
 /* cyber-container-end */
+/* num-container-start */
+.num-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.num-head{
+    color: white;
+    font-size: 50px;
+}
+.num-span{
+    color: #a535c5;
+    font-family: sans-serif;
+}
+/* mission-container-start */
+.mission-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    border-style: solid;
+    border-color: var(--color--gray-3);
+    padding: 50px;
+    border-radius: 30px;
+}
+.mission-card{
+    width: 27vw;
+    text-align: center;
+    padding: 20px;
+}
+.binary-img{
+    background-image: url(images/binary.svg);
+    background-size: cover;
+}
+/* mission-container-end */
+/* benifits-container-start */
+.benifits-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20vh;
+}
+.benifits-card{
+    border-style: solid;
+    text-align: left;
+    border-color: var(--color--gray-3);
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    height: 50vh;
+    width: 55vh;
+    margin-top: 5vh;
+    margin: 3vh;
+
+}
+/* .benifits-logo{
+    border-style: solid;
+    border: 5px;
+    border-color: var(--color--primary-2);
+    border-radius: 10px;
+    padding: 10px;
+} */
+.benifits-head{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 100px;
+    color: white;
+}
+.benifits-ready-head{
+    color: white;
+    margin-top: -10px;
+    margin: 30px;
+}
+.benifits-button{
+    color: white;
+    background-color: var(--color--black);
+    border-color: var(--color--primary-2);
+    border-radius: 30px;
+    padding: 15px;
+    padding-right: 90px;
+    padding-left: 90px;
+    font-size: 20px;
+    bottom: 0;  
+}
+/* trust-container-start */
+.trust-logo{
+    color: var(--color--gray-3);
+    border-style: solid;
+    padding: 10px;
+    margin: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 20px;
+    height: 10vh;
+    margin-bottom: 20vh;
+}
+/* trust-container-end */
+/* team-container-start */
+.team-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 20vh;
+}
+.team-img{
+    height: 45vh;
+    border-radius: 20px;
+}
+.team-head{
+    color: white;
+}
+.team-para{
+    color: var(--color--gray-4);
+    text-align: center;
+}
+/* team-container-end */
+/* contact-container-start */
+.contact-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20vh;
+}
+.contact-logo{
+    margin: 25px;
+}
+.pages{
+    display: flex;
+    justify-content: row;
+}
+.contact-list{
+    color: var(--color--gray-4);
+    font-size: 20px;
+}
+/* contact-container-end */
+/* footer-start */
+.search-box{
+    color: white;
+    padding: 20px;
+    background-color: var(--color--gray-2);
+    border-radius: 20px;
+    border-color: var(--color--primary-4);
+    border-width: 1px;
+    width: 40vh;
+    font-size: 20px;
+}
+.footer-text{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-logo{
+    padding: 30px;
+}
+.design-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.design{
+    color: white;
+    font-size: 20px;
+}

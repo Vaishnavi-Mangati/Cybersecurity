@@ -1,31 +1,46 @@
 <!DOCTYPE html>
 <head>
     <title>About Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="about.css">
 </head>
 <body>
-    <div class="aboutsection">
     <!-- navbar start -->
-    <nav>
+    <nav class="navbar">
         <div class ="navdiv">
             <div>
-                <img src="https://cdn.prod.website-files.com/66de97f960472d67e55ab299/66e1342a1eebb38571fd4f9a_pattern-03.svg" class = "logo_img"/>
-                <a href="#" class="logotext">Cybersecurity</a>
+                <a href="#"><img src="images/cyberlogo.svg" class = "logo_img"/></a>
             </div>
             <div class = "navlist">
                 <ul>
-                    <a href="#" class="home">Home</a>
-                    <a href="#" class="about">About</a>
-                    <a href="#" class="pages">Pages</a>
-                    <a href="#" class="services">Services</a>
+                <li><a href="#" class="home">Home</a></li>
+                <li><a href="#" class="about active">About</a></li>
+                <li><a href="#" class="pages">Pages<i class="fas fa-caret-down"></i></a>
+                <div class="dropdown_menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Home 2</a></li>
+                    <li><a href="#">Case Study</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Service Static</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
                 </ul>
+                </div></li>
+                <li><a href="#" class="services">Services</a></li>
+            </ul>
             </div>
-            <div>
-                <button class="navbtn">Contact</button>
+            <div class="navbtn">
+                <button class="btn">Contact</button>
             </div>
         </div>
     </nav>
     <!-- navbar end -->
+    <div class="aboutsection">
     <!-- cyber-container-start -->
     <div class="cyber-container">
         <div>
@@ -48,142 +63,170 @@
             <img src="images/image1.avif" class="cyber-img"/>
         </div>
     </div>
+    <hr>
     <!--cyber-container-end -->
-    <div>
+    <!--num-container-start-->
+    <div class="num-container">
         <div>
-            <h1>1,200+</h1>
-            <p>Clients protected</p>
+            <h1 class="num-head">1,200<span class="num-span">+</span></h1>
+            <p class="cyber-para">Global reach</p>
         </div>
         <div>
-            <h1>30+</h1>
-            <p>Global reach</p>
+            <h1 class="num-head">30</h1>
+            <p class="cyber-para">Global reach</p>
         </div>
         <div>
-            <h1>250+</h1>
-            <p>Cyber security experts</p>
+            <h1 class="num-head">250<span class="num-span">+</span></h1>
+            <p class="cyber-para">Cyber security experts</p>
         </div>
         <div>
-            <h1>15+</h1>
-            <p>Years of experience</p>
-        </div>
-    </div>
-    <div>
-        <div>
-            <h1>Our mission</h1>
-            <p>To provide top-tier cybersecurity solutions that protect businesses and individuals from evolving digital threats.</p>
-        </div>
-        <div>
-            <img src="images/logo.svg"/>
-        </div>
-        <div>
-            <h1>Our vision</h1>
-            <p>A world where every organization operates securely, free from cyber risks and vulnerabilities.</p>
+            <h1 class="num-head">15<span class="num-span">+</span></h1>
+            <p class="cyber-para">Years of experience</p>
         </div>
     </div>
-    <div>
-        <h1>Benefits of <span>Cybersecurity</span></h1>
-        <div>
-            <img src=""/>
-            <h2>Secure your data</h1>
-            <p>Protect sensitive information from cyber threats with top-tier security.</p>
+    <!-- num-container-end -->
+    <!-- mission-container-start -->
+    <div class="mission-container">
+        <div class="mission-card">
+            <h1 class="num-head">Our mission</h1>
+            <p class="cyber-para">To provide top-tier cybersecurity solutions that protect businesses and individuals from evolving digital threats.</p>
         </div>
         <div>
-            <img src=""/>
-            <h2>Secure your data</h1>
-            <p>Protect sensitive information from cyber threats with top-tier security.</p>
+            <img src="images/logo.svg" class="binary-img"/>
         </div>
-        <div>
-            <img src=""/>
-            <h2>Secure your data</h1>
-            <p>Protect sensitive information from cyber threats with top-tier security.</p>
-        </div>
-        <h1>Ready to experience the difference?</h1>
-        <button>Get started</button>
-    </div>
-    <div>
-        <h1>Trusted by industry <span>pioneers</span></h1>
-        <div>
-            <img src=""/>
-            <img src=""/>
-            <img src=""/>
-            <img src=""/>
+        <div class="mission-card">
+            <h1 class="num-head">Our vision</h1>
+            <p class="cyber-para">A world where every organization operates securely, free from cyber risks and vulnerabilities.</p>
         </div>
     </div>
-    <div>
-        <h1>Meet our team</h1>
-        <div>
-            <img src=""/>
-            <h2>Amanda Reed</h2>
-            <p>CISO</p>
+    <!-- mission-container-end -->
+     <!-- benifits-container-start -->
+    <center>
+        <h1 class="num-head">Benefits of <span class="num-span">Cybersecurity</span></h1>
+    </center>
+    <div class="benifits-container">
+        <div class="benifits-card">
+            <img src="images/lock.svg"/>
+            <h1 class="benifits-head">Secure your data</h1>
+            <p class="cyber-para">Protect sensitive information from cyber threats with top-tier security.</p>
         </div>
-        <div>
-            <img src=""/>
-            <h2>Amanda Reed</h2>
-            <p>CISO</p>
+        <div class="benifits-card">
+            <img src="images/puzzle.svg"/>
+            <h1 class="benifits-head">Secure your data</h1>
+            <p class="cyber-para">Protect sensitive information from cyber threats with top-tier security.</p>
         </div>
-        <div>
-            <img src=""/>
-            <h2>Amanda Reed</h2>
-            <p>CISO</p>
+        <div class="benifits-card">
+            <img src="images/reverse.svg"/>
+            <h1 class="benifits-head">Secure your data</h1>
+            <p class="cyber-para">Protect sensitive information from cyber threats with top-tier security.</p>
+        </div>
+        <div class="benifits-ready-head">
+            <h1>Ready to experience the difference?</h1>
+            <button class="benifits-button">Get started</button>
         </div>
     </div>
+    <!-- benifits-container-end -->
+     <!-- trust-container-start -->
     <div>
+        <h1 class="num-head"><center>Trusted by industry <span class="num-span">pioneers</span></center></h1>
         <div>
-            <img src=""/>
+            <img src="images/emblem.svg" class="trust-logo"/>
+            <img src="images/grapho.svg" class="trust-logo"/>
+            <img src="images/iconic.svg" class="trust-logo"/>
+            <img src="images/optimal.svg" class="trust-logo"/>
+            <img src="images/vectra.svg" class="trust-logo"/>
+        </div>
+    </div>
+    <!-- trust-container-end -->
+     <!-- team-container-start -->
+    <h1 class="num-head"><center>Meet our <span class="num-span">team</span></center></h1>
+    <div class="team-container">
+        <div>
+            <img src="images/person1.jpg" class="team-img"/>
+            <h2 class="team-head">Amanda Reed</h2>
+            <p class="team-para">CISO</p>
+        </div>
+        <div>
+            <img src="images/person2.avif" class="team-img"/>
+            <h2 class="team-head">Dennis Barrett</h2>
+            <p class="team-para">Network Security Engineer</p>
+        </div>
+        <div>
+            <img src="images/person3.avif" class="team-img"/>
+            <h2 class="team-head">Bryan Knight</h2>
+            <p class="team-para">SOC Manager</p>
+        </div>
+    </div>
+    <!-- team-container-end -->
+    <!-- contact-container-start -->
+    <div class="contact-container">
+        <div>
+            <img src="images/cyberlogo.svg"/>
             <div>
-                <img src=""/>
-                <img src=""/>
-                <img src=""/>
-                <img src=""/>
+                <img src="images/facebook.svg" class="contact-logo"/>
+                <img src="images/instaram.svg" class="contact-logo"/>
+                <img src="images/tedx.svg" class="contact-logo"/>
+                <img src="images/linkedin.svg" class="contact-logo"/>
             </div>
         </div>
-        <div>
-            <h1>Pages</h1>
-            <p>Home</p>
-            <p>Home 2</p>
-            <p>Case Study</p>
-            <p>About</p>
-            <p>Services</p>
-            <p>Service <br/> Static</p>
+        <div class="pages">
+        <ul>
+            <h1 class="team-head">Pages</h1>
+            <li><a href="#" class="contact-list">Home</a></li>
+            <li><a href="#" class="contact-list">Home 2</a></li>
+            <li><a href="#" class="contact-list">Case Study</a></li>
+            <li><a href="#" class="contact-list">About</a></li>
+            <li><a href="#" class="contact-list">Services</a></li>
+            <li><a href="#" class="contact-list">Service<br/>Static</a></li>
+        </ul>
         </div>
         <div>
-            <p>Pricing</p>
-            <p>Team</p>
-            <p>Blog</p>
-            <p>Contact</p>
+            <li><a href="#" class="contact-list">Pricing</a></li>
+            <li><a href="#" class="contact-list">Team</a></li>
+            <li><a href="#" class="contact-list">Blog</a></li>
+            <li><a href="#" class="contact-list">Contact</a></li>
         </div>
         <div>
-            <h1>Utility</h1>
-            <p>Style Guide</p>
-            <p>Instructions</p>
-            <p>Licenses</p>
-            <p>Changelog</p>
-            <p>Coming Soon</p>
+        <ul>
+            <h1 class="team-head">Utility</h1>
+            <li><a href="#" class="contact-list">Style Guide</a></li>
+            <li><a href="#" class="contact-list">Instructions</a></li>
+            <li><a href="#" class="contact-list">Licenses</a></li>
+            <li><a href="#" class="contact-list">Changelog</a></li>
+            <li><a href="#" class="contact-list">Coming Soon</a></li>
+        </ul>
         </div>
         <div>
-            <p>Link in Bio</p>
-            <p>Password<br/> Protected</p>
-            <p>Error 404</p>
+        <ul>
+            <li><a href="#" class="contact-list">Link in Bio</a></li>
+            <li><a href="#" class="contact-list">Password<br/> Protected</a></li>
+            <li><a href="#" class="contact-list">Error 404</a></li>
+        </ul>
         </div>
         <div>
-            <h1>Contact</h1>
-            <p>+1 (555) 123-4567</p>
-            <p>hello@example.com</p>
-            <p>106 grant ave.</p>
-            <p>Logansport, in 46947</p>
-            <p>Coming Soon</p>
+            <h1 class="team-head">Contact</h1>
+            <li><a href="#" class="contact-list">+1 (555) 123-4567</a></li>
+            <li><a href="#" class="contact-list">hello@example.com</a></li>
+            <li><a href="#" class="contact-list">106 grant ave.<br/>Logansport, in 46947</a></li>
         </div>
     </div> 
+    <!-- contact-container-end -->
+    <!-- footer-start  -->
+    <div class="footer-text">
     <div>
-        <h1>Stay ahead of cyber threats</h1>
-        <input type="search" placeholder="Enter your email" />
-        <p>Design by <span>Webestica,</span> Powered by <span>Webflow</span></p>
+        <h1 class="team-head">Stay ahead of cyber threats</h1>
+        <input type="search" placeholder="Enter your email" class="search-box"/>
     </div>
     <div>
-        <img src=""/>
-        <img src=""/>
+        <img src="images/cyber.svg" class="footer-logo"/>
+        <img src="images/cyberplus.svg" class="footer-logo"/>
     </div>
-
     </div>
+    <div class="design-section">
+        <p class="design">Design by <span style="text-decoration: underline;">Webestica,</span> Powered by <span style="text-decoration: underline;">Webflow</span></p>
+        <p class="design">Privacy Policy</p>
+    </div>
+    </div>
+    <!-- footer-end -->
     </body>
 </html>
