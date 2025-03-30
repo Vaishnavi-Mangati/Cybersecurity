@@ -16,14 +16,14 @@ body{
     line-height: 1.5em;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1360px;
+    overflow: hidden;
 }
 .aboutsection{
     margin-left: auto;
     margin-right: auto;
     padding-left: 30px;
     padding-right: 30px;
-    max-width: 1360px;
+
 }
 *{
     text-decoration: none;
@@ -75,7 +75,7 @@ a.active, a:hover{
     transition: .5s;
 }
 
-.home, .about, .pages, .services{
+.navlist{
     color: var(--color--gray-4);
     padding-left: 5px;
     padding-right: 5px;
@@ -95,18 +95,15 @@ a.active, a:hover{
     padding-left: 30px;
     padding-right: 30px;  
 }
+#check{
+    display: none;
+}
 #menu-icon{
     font-size: 42px;
     z-index: 10001;
     margin-left: 25px;
     display: none;
 }
-/*
-.fas{
-    float: right;
-    margin: 3px;
-    height: 1em;
-}*/
 .btn{
     padding: 10px 30px;
     border-top-left-radius: 50px;
@@ -136,6 +133,45 @@ a.active, a:hover{
     background-image:linear-gradient(135deg, var(--color--primary-2) 40%, var(--color--primary-3));
     z-index: -1;
 } 
+.btn:hover{
+    color: var(--color--primary-2);
+}
+.navright{
+    display: flex;
+}
+@media(max-width: 990px){
+    #menu-icon{
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        width: auto;
+        height: 23%;
+        margin-top: 90px;
+        background-color: var(--color--gray-1);
+        padding: 20px;
+        border: 1px solid var(--color--gray-3);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        top: 0;
+        left: 100%;
+        right: 0;
+        bottom: 0;
+        margin-right: 30px;
+        margin-left: 30px;
+        transition: all .6s ease-in-out;
+    }
+    .navlist.a{
+        display: block;
+    }
+    .navlist.open{
+        left: 0;
+    }
+    #check:checked ~ .navlisst{
+        left: 0;
+    }
+}
 /* cyber-container-start */
 .cyber-container{
     grid-column-gap: 50px;
