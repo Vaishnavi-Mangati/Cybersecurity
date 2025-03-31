@@ -14,9 +14,8 @@ body{
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5em;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
+    margin: 0 80px;
+    /* overflow: hidden; */
 }
 .aboutsection{
     margin-left: auto;
@@ -86,15 +85,13 @@ a.active, a:hover{
 .navbar{
     padding-bottom: 30px;
     padding-top: 30px;
-}
-.navdiv{
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 20px;
-    padding-left: 30px;
-    padding-right: 30px;  
+    margin: 0 20px;
 }
+
 #check{
     display: none;
 }
@@ -139,6 +136,32 @@ a.active, a:hover{
 .navright{
     display: flex;
 }
+
+.pages-content{
+    display: none;
+    position: absolute;
+    background-color: #040114;
+    min-width: 160px;
+    border-color: #7768d2;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 1);  
+    border-color: #e1e0e9;
+    border-radius: 2px;
+}
+
+.pages-content a{
+    float: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding: 3px 20px;
+}
+
+.pages-dropdown:hover .pages-content{
+    display: block;
+}
+
+
 @media(max-width: 990px){
     #menu-icon{
         display: block;
@@ -542,7 +565,7 @@ a.active, a:hover{
 .contact-logo{
     margin: 25px;
 }
-.pages{
+.contact-pages{
     display: flex;
     justify-content: row;
 }
