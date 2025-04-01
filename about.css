@@ -16,14 +16,6 @@ body{
     line-height: 1.5em;
     margin-left: auto;
     margin-right: auto;
-    overflow: hidden;
-}
-.aboutsection{
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 30px;
-    padding-right: 30px;
-
 }
 *{
     text-decoration: none;
@@ -52,11 +44,28 @@ body{
     --border-radius--sm: 10px;
     --color--transparent: transparent;
 }
-.container{
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-right: auto;
+.navbar{
+    max-width: 1360px;
+    padding-bottom: 30px;
+    padding-top: 30px;
     margin-left: auto;
+    margin-right: auto;
+}
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 30px;  
+}
+.navlist{
+    color: var(--color--gray-4);
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 18px; 
+    font-weight: 500;
+    transition: .3s ease-in-out;
 }
 nav ul{
     float: right;
@@ -71,38 +80,46 @@ nav ul li a{
     transition: all .6s ease;
 }
 a.active, a:hover{
-    color: blue;
+    color: var(--color--primary-1);
     transition: .5s;
 }
-
-.navlist{
-    color: var(--color--gray-4);
-    padding-left: 5px;
-    padding-right: 5px;
-    font-size: 18px; 
-    font-weight: 500;
-    transition: .3s ease-in-out;
+.fas{
+    position: relative;
+    font-size: 15px;
+    padding: 5px;
 }
-.navbar{
-    padding-bottom: 30px;
-    padding-top: 30px;
-}
-.navdiv{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 20px;
-    padding-left: 30px;
-    padding-right: 30px;  
-}
-#check{
+.pages-content{
     display: none;
+    position: absolute;
+    background-color: var(--color--black);
+    min-width: 200px;
+    border-radius: 10px;
+    border: 1px solid var(--color--gray-3);
+    transition: all .6s ease-in-out;
+    z-index: 10;
+}
+.pages-content a{
+    float: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+.pages-dropdown:hover .pages-content{
+    display: block;
+}
+.pages:hover{
+    color: var(--color--primary-2);
+}
+
+.pages-content a.pages-active, .pages-content a:hover{
+    color: var(--color--primary-2);
 }
 #menu-icon{
-    font-size: 42px;
+    font-size: 25px;
     z-index: 10001;
     margin-left: 25px;
-    display: none;
+    display: none; 
 }
 .btn{
     padding: 10px 30px;
@@ -142,6 +159,9 @@ a.active, a:hover{
 @media(max-width: 990px){
     #menu-icon{
         display: block;
+        border: 1px solid var(--color--gray-3);
+        border-radius: 50%;
+        padding: 10px;
     }
     .navlist{
         position: absolute;
@@ -154,25 +174,60 @@ a.active, a:hover{
         border-radius: 20px;
         display: flex;
         flex-direction: column;
-        top: 0;
-        left: 100%;
+        top: -100%;
+        left: 0;
         right: 0;
         bottom: 0;
         margin-right: 30px;
         margin-left: 30px;
-        transition: all .6s ease-in-out;
     }
     .navlist.a{
         display: block;
     }
     .navlist.open{
-        left: 0;
-    }
-    #check:checked ~ .navlisst{
-        left: 0;
+        top: 0;
+        transition: all .6s ease-in-out;
     }
 }
+@media(max-width: 750px){
+    .btn{
+        display: none;
+    }
+}
+@media(max-width: 420px){
+    .logo_img{
+        width: 65vw;
+    }
+}
+/* templates card start */
+.templates-card{
+    display: inline-block;
+    font-size: 13px;
+    background-color: white;
+    border-radius: 30px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    font-weight: bold;
+    padding: 5px;
+}
+.templates-head{
+    color: var(--color--black);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-right: 5px;
+}
+/* templates card end */
 /* cyber-container-start */
+.aboutsection{
+    max-width: 1360px;
+    margin-left:auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
 .cyber-container{
     grid-column-gap: 50px;
     grid-row-gap: 50px;
@@ -189,7 +244,6 @@ a.active, a:hover{
     grid-row-gap: 10px;
     flex-flow: column;
     display: flex;
-    
 }
 .cyber-head{
     font-family: var(--font-family--heading);
@@ -205,6 +259,7 @@ a.active, a:hover{
     font-size: 20px;
     margin-top: 0;
     margin-bottom: 10px;
+    padding-top: 15px;
 }
 .cyber-list{
     display: flex;
@@ -224,6 +279,29 @@ a.active, a:hover{
 .img-main{
     position: relative;
 }
+@media(max-width:990px){
+    .img-main{
+        text-align: center;
+    }
+    .img-main img{
+        width: 800px;
+        height: auto;
+        margin-top: 50px;
+        border-radius: 30px;
+    }
+    .cyber-container{
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+    .cyber-heading{
+        min-width: 767px;
+        font-size: 64px;
+    }
+    .img-decoration{
+        overflow-y: visible;
+    }
+}
 .img{
     max-width: 100%;
     display: inline-block;
@@ -241,8 +319,8 @@ a.active, a:hover{
 }
 .img-decoration{
     background-image: linear-gradient(180deg, var(--color--primary-2) 40%, var(--color--primary-4));
-    height: 80%;
-    width: 80%;
+    height: 100%;
+    width: 100%;
     position: absolute;
     filter: blur(120px);
     margin: auto;
@@ -274,6 +352,8 @@ a.active, a:hover{
 /* mission-container-start */
 .mission-container{
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 160px;
     margin-bottom: 160px;
     color: var(--color--gray-4);
@@ -289,13 +369,16 @@ a.active, a:hover{
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-columns: 1fr;
-    padding: 40px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 .mission-card{
     font-size: 40px;
     height: 1.5em;
     text-align: center;
     position: relative;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 .img-wrap{
     position: relative;
@@ -509,6 +592,9 @@ a.active, a:hover{
     justify-content: space-between;
     text-align: center;
     margin-bottom: 20vh;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 .team-img{
     height: 45vh;
@@ -538,6 +624,8 @@ a.active, a:hover{
     align-items: center;
     justify-content: space-between;
     margin-bottom: 20vh;
+    margin-right: 100px;
+    margin-left: 100px;
 }
 .contact-logo{
     margin: 25px;
@@ -565,6 +653,8 @@ a.active, a:hover{
 .footer-text{
     display: flex;
     justify-content: space-between;
+    margin-right: 100px;
+    margin-left: 100px;
 }
 .footer-logo{
     padding: 30px;
@@ -573,6 +663,9 @@ a.active, a:hover{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 30px;
 }
 .design{
     color: white;
