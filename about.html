@@ -7,54 +7,44 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-
+    <script src="about.js"></script>
 </head>
+
 <body>
     <!-- navbar start -->
     <nav class="navbar">
-        <div class="navdiv">
-            <a href="#"><img src="images/cyberlogo.svg" class="logo_img" /></a>
-            <ul class="navlist">
-                <li><a href="#" class="home">Home</a></li>
-                <li><a href="#" class="about active">About</a></li>
-                <li>
-                    <div class="pages-dropdown">
-                        <a href="#" class="pages">Pages
-                            <i class="fas fa-solid fa-chevron-down"></i>
-                        </a>
-                        <div class="pages-content">
-                            <a href="#">Home</a>
-                            <a href="#">Home 2</a>
-                            <a href="#">Case Study</a>
-                            <a href="#" class="pages-active">About</a>
-                            <a href="#">Services</a>
-                            <a href="#">Services Static</a>
-                            <a href="#">Team</a>
-                            <a href="#">Pricing</a>
-                            <a href="#">Blog</a>
-                            <a href="#">Contact</a>
-                            <a href="#">Privacy Policy</a>
-                        </div>
+        <div class="navlogo">
+            <a href="#">
+                <img src="images/cyberlogo.svg" class="logo_img" />
+            </a>
+        </div>
+        <ul class="navlist">
+            <li><a href="#" class="home">Home</a></li>
+            <li><a href="#" class="about active">About</a></li>
+            <li>
+                <div class="pages-dropdown">
+                    <a href="#" class="pages" id="pages">Pages
+                        <i class="fas fa-solid fa-chevron-down"></i>
+                    </a>
+                    <div class="pages-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
                     </div>
-                </li>
-                <li><a href="#" class="services">Services</a></li>
-            </ul>
-            <div class="navright">
-                <a href="#" class="btn">Contact</a>
+                </div>
+            </li>
+            <li><a href="#" class="services">Services</a></li>
+        </ul>
+        <div class="navright">
+            <a href="#" class="btn">Contact</a>
+            <input type="checkbox" id="check">
+            <label for="check" class="checked">
                 <div class="bx bx-menu" id="menu-icon"></div>
-            </div>
+            </label>
+
         </div>
     </nav>
     <!-- navbar end -->
-    <!-- more templates start -->
-    <div class="templates-card">
-        <a href="#" class="templates-head">
-        <img src="images/templateslogo.svg" class="templates-logo"/>
-        <span class="templates-head">More Templates</span>
-    </a>
-    </div>
-
-    <!-- more templates end -->
     <div class="aboutsection">
         <!-- cyber-container-start -->
         <div class="cyber-container">
@@ -182,7 +172,31 @@
         <h1 class="num-head">
             <center>Trusted by industry <span class="num-span">pioneers</span></center>
         </h1>
-        <div class="client-wrap">
+        <div class="marquee-container">
+            <div class="marquee">
+                <span><img src="images/company_logos/grapho.svg"></span>
+                <span><img src="images/company_logos/emblem.svg"></span>
+                <span><img src="images/company_logos/iconic.svg"></span>
+                <span><img src="images/company_logos/vectra.svg"></span>
+                <span><img src="images/company_logos/optimal.svg"></span>
+            </div>
+            <!-- Duplicate for smooth loop -->
+            <div class="marquee">
+                <span><img src="images/company_logos/grapho.svg"></span>
+                <span><img src="images/company_logos/emblem.svg"></span>
+                <span><img src="images/company_logos/iconic.svg"></span>
+                <span><img src="images/company_logos/vectra.svg"></span>
+                <span><img src="images/company_logos/optimal.svg"></span>
+            </div>
+            <div class="marquee">
+                <span><img src="images/company_logos/grapho.svg"></span>
+                <span><img src="images/company_logos/emblem.svg"></span>
+                <span><img src="images/company_logos/iconic.svg"></span>
+                <span><img src="images/company_logos/vectra.svg"></span>
+                <span><img src="images/company_logos/optimal.svg"></span>
+            </div>
+        </div>
+        <!-- <div class="client-wrap">
             <div class="client-driver left"></div>
             <div class="client-driver right"></div>
             <div class="client-grid" style="transform: translate3d(70%, 0px, 0px)
@@ -220,7 +234,8 @@
                     <img src="images/vectra.svg" class="client-image" />
                 </div>
             </div>
-        </div>
+        </div> -->
+
     </div>
     <!-- trust-container-end -->
     <!-- team-container-start -->
@@ -258,7 +273,7 @@
                 <img src="images/linkedin.svg" class="contact-logo" />
             </div>
         </div>
-        <div class="pages">
+        <div class="contact-pages">
             <ul>
                 <h1 class="team-head">Pages</h1>
                 <li><a href="#" class="contact-list">Home</a></li>
@@ -318,7 +333,6 @@
     </div>
     </div>
     <!-- footer-end -->
-    <script src="script.js"></script>
 </body>
 
 </html>
