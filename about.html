@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
 </head>
+
 <body>
     <!-- navbar start -->
     <nav class="navbar">
@@ -49,9 +50,9 @@
     <!-- more templates start -->
     <div class="templates-card">
         <a href="#" class="templates-head">
-        <img src="images/templateslogo.svg" class="templates-logo"/>
-        <span class="templates-head">More Templates</span>
-    </a>
+            <img src="images/templateslogo.svg" class="templates-logo" />
+            <span class="templates-head">More Templates</span>
+        </a>
     </div>
 
     <!-- more templates end -->
@@ -182,43 +183,28 @@
         <h1 class="num-head">
             <center>Trusted by industry <span class="num-span">pioneers</span></center>
         </h1>
-        <div class="client-wrap">
-            <div class="client-driver left"></div>
-            <div class="client-driver right"></div>
-            <div class="client-grid" style="transform: translate3d(70%, 0px, 0px)
-            scale3d(1, 1, 1) rotateX(0deg) rotateY('0deg') skew(0deg, 0deg); transform-style: preserve-3d;
-            will-change: transform;">
-                <div class="client-image-wrap">
-                    <img src="images/emblem.svg" class="client-image" />
-                </div>
+        <div class="marquee-container">
+            <div class="marquee">
+                <span><img src="images/grapho.svg"></span>
+                <span><img src="images/emblem.svg"></span>
+                <span><img src="images/iconic.svg"></span>
+                <span><img src="images/vectra.svg"></span>
+                <span><img src="images/optimal.svg"></span>
             </div>
-            <div class="client-grid" style="transform: translate3d(70%, 0px, 0px)
-            scale3d(1, 1, 1) rotateX(0deg) rotateY('0deg') skew(0deg, 0deg); transform-style: preserve-3d;
-            will-change: transform;">
-                <div class="client-image-wrap">
-                    <img src="images/grapho.svg" class="client-image" />
-                </div>
+            <!-- Duplicate for smooth loop -->
+            <div class="marquee">
+                <span><img src="images/grapho.svg"></span>
+                <span><img src="images/emblem.svg"></span>
+                <span><img src="images/iconic.svg"></span>
+                <span><img src="images/vectra.svg"></span>
+                <span><img src="images/optimal.svg"></span>
             </div>
-            <div class="client-grid" style="transform: translate3d(70%, 0px, 0px)
-            scale3d(1, 1, 1) rotateX(0deg) rotateY('0deg') skew(0deg, 0deg); transform-style: preserve-3d;
-            will-change: transform;">
-                <div class="client-image-wrap">
-                    <img src="images/iconic.svg" class="client-image" />
-                </div>
-            </div>
-            <div class="client-grid" style="transform: translate3d(70%, 0px, 0px)
-            scale3d(1, 1, 1) rotateX(0deg) rotateY('0deg') skew(0deg, 0deg); transform-style: preserve-3d;
-            will-change: transform;">
-                <div class="client-image-wrap">
-                    <img src="images/optimal.svg" class="client-image" />
-                </div>
-            </div>
-            <div class="client-grid" style="transform: translate3d(70%, 0px, 0px)
-            scale3d(1, 1, 1) rotateX(0deg) rotateY('0deg') skew(0deg, 0deg); transform-style: preserve-3d;
-            will-change: transform;">
-                <div class="client-image-wrap">
-                    <img src="images/vectra.svg" class="client-image" />
-                </div>
+            <div class="marquee">
+                <span><img src="images/grapho.svg"></span>
+                <span><img src="images/emblem.svg"></span>
+                <span><img src="images/iconic.svg"></span>
+                <span><img src="images/vectra.svg"></span>
+                <span><img src="images/optimal.svg"></span>
             </div>
         </div>
     </div>
@@ -249,68 +235,75 @@
     <!-- team-container-end -->
     <!-- contact-container-start -->
     <div class="contact-container">
-        <div>
-            <img src="images/cyberlogo.svg" />
-            <div>
-                <img src="images/facebook.svg" class="contact-logo" />
-                <img src="images/instaram.svg" class="contact-logo" />
-                <img src="images/tedx.svg" class="contact-logo" />
-                <img src="images/linkedin.svg" class="contact-logo" />
+        <div class="container-1">
+            <div class="card-1">
+                <a href="#" class="contact-logo"><img src="images/cyberlogo.svg" /></a>
+                <div class="contact-icons">
+                    <img src="images/facebook.svg" />
+                    <img src="images/instaram.svg" />
+                    <img src="images/tedx.svg" />
+                    <img src="images/linkedin.svg" />
+                </div>
+            </div>
+            <div class="contact-pages">
+                <h1 class="team-head">Pages</h1>
+                <div class="pages-wrap">
+                    <div class="pages-inner-wrap">
+                        <li><a href="#" class="contact-list">Home</a></li>
+                        <li><a href="#" class="contact-list">Home 2</a></li>
+                        <li><a href="#" class="contact-list">Case Study</a></li>
+                        <li><a href="#" class="contact-list">About</a></li>
+                        <li><a href="#" class="contact-list">Services</a></li>
+                        <li><a href="#" class="contact-list">Service Static</a></li>
+                    </div>
+                    <div class="pages-inner-wrap">
+                        <li><a href="#" class="contact-list">Pricing</a></li>
+                        <li><a href="#" class="contact-list">Team</a></li>
+                        <li><a href="#" class="contact-list">Blog</a></li>
+                        <li><a href="#" class="contact-list">Contact</a></li>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-pages">
+                <h1 class="team-head">Utility</h1>
+                <div class="pages-wrap">
+                    <div class="pages-inner-wrap">
+                        <li><a href="#" class="contact-list">Style Guide</a></li>
+                        <li><a href="#" class="contact-list">Instructions</a></li>
+                        <li><a href="#" class="contact-list">Licences</a></li>
+                        <li><a href="#" class="contact-list">Changelog</a></li>
+                        <li><a href="#" class="contact-list">Comming Soon</a></li>
+                    </div>
+                    <div class="pages-inner-wrap">
+                        <li><a href="#" class="contact-list">Link in Bio</a></li>
+                        <li><a href="#" class="contact-list">Password Protected</a></li>
+                        <li><a href="#" class="contact-list">Error 404</a></li>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-pages">
+                <h1 class="team-head">Contact</h1>
+                <div class="pages-wrap pages-inner-wrap">
+                    <li><a href="#" class="contact-list">+1 (555) 123-4567</a></li>
+                    <li><a href="#" class="contact-list">hello@example.com</a></li>
+                    <li><a href="#" class="contact-list">106 grant ave. Logansport, in 46947</a></li>
+                </div>
             </div>
         </div>
-        <div class="pages">
-            <ul>
-                <h1 class="team-head">Pages</h1>
-                <li><a href="#" class="contact-list">Home</a></li>
-                <li><a href="#" class="contact-list">Home 2</a></li>
-                <li><a href="#" class="contact-list">Case Study</a></li>
-                <li><a href="#" class="contact-list">About</a></li>
-                <li><a href="#" class="contact-list">Services</a></li>
-                <li><a href="#" class="contact-list">Service<br />Static</a></li>
-            </ul>
-        </div>
-        <div>
-            <li><a href="#" class="contact-list">Pricing</a></li>
-            <li><a href="#" class="contact-list">Team</a></li>
-            <li><a href="#" class="contact-list">Blog</a></li>
-            <li><a href="#" class="contact-list">Contact</a></li>
-        </div>
-        <div>
-            <ul>
-                <h1 class="team-head">Utility</h1>
-                <li><a href="#" class="contact-list">Style Guide</a></li>
-                <li><a href="#" class="contact-list">Instructions</a></li>
-                <li><a href="#" class="contact-list">Licenses</a></li>
-                <li><a href="#" class="contact-list">Changelog</a></li>
-                <li><a href="#" class="contact-list">Coming Soon</a></li>
-            </ul>
-        </div>
-        <div>
-            <ul>
-                <li><a href="#" class="contact-list">Link in Bio</a></li>
-                <li><a href="#" class="contact-list">Password<br /> Protected</a></li>
-                <li><a href="#" class="contact-list">Error 404</a></li>
-            </ul>
-        </div>
-        <div>
-            <h1 class="team-head">Contact</h1>
-            <li><a href="#" class="contact-list">+1 (555) 123-4567</a></li>
-            <li><a href="#" class="contact-list">hello@example.com</a></li>
-            <li><a href="#" class="contact-list">106 grant ave.<br />Logansport, in 46947</a></li>
+        <div class="contact-text">
+            <div>
+                <h1 class="team-head">Stay ahead of cyber threats</h1>
+                <input type="search" placeholder="Enter your email" class="search-box" />
+            </div>
+            <div class="empty-container"></div>
+            <div class="awards">
+                <img src="images/cyber.svg" class="footer-logo" />
+                <img src="images/cyberplus.svg" class="footer-logo" />
+            </div>
         </div>
     </div>
     <!-- contact-container-end -->
     <!-- footer-start  -->
-    <div class="footer-text">
-        <div>
-            <h1 class="team-head">Stay ahead of cyber threats</h1>
-            <input type="search" placeholder="Enter your email" class="search-box" />
-        </div>
-        <div>
-            <img src="images/cyber.svg" class="footer-logo" />
-            <img src="images/cyberplus.svg" class="footer-logo" />
-        </div>
-    </div>
     <div class="design-section">
         <p class="design">Design by <span style="text-decoration: underline;">Webestica,</span> Powered by <span
                 style="text-decoration: underline;">Webflow</span></p>
