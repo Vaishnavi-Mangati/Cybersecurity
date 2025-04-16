@@ -1,0 +1,100 @@
+:root {
+    --color--black: #040114;
+    --font-family--body: Inter, sans-serif;
+    --color--gray-4: #e1e0e9;
+    --font-family--heading: "Nohemi Vf", sans-serif;
+    --color--heading: var(--color--white);
+    --color--gray-3: #252332;
+    --border-radius--border-radius: 20px;
+    --color--gray-1: #070417;
+    --color--primary-1: #7768d2;
+    --color--white: white;
+    --color--primary-2: #a535c5;
+    --color--gray-2: #08051d;
+    --border-radius--lg: 50px;
+    --color--primary-3: #bf95f3;
+    --color--primary-4: #f2c2f9;
+    --border-radius--sm: 10px;
+    --color--transparent: transparent;
+}
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #040114;
+    height: auto;
+    color: var(--color--gray-4);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: var(--font-family--body)
+}
+*{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: "Nohemi VF";
+    src: url('/nohemifonts.ttf');
+}
+.case-container{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 1360px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid #252332;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.case-head{
+    position: relative;
+    z-index: 2;
+}
+.case-decoration{
+    background-image: linear-gradient(180deg, var(--color--primary-2) 40%, var(--color--primary-4));
+    filter: blur(120px);
+    height: 100px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: -50%;
+    top: auto;
+    left: 0%;
+    right: 0%;
+    position: absolute;
+}
+.cards-container{
+    max-width: 1360px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 150px;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    line-height: 2rem;
+}
+.card-img{
+    width: 55vh;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+.cards-head{
+    font-size: 25px;
+    font-family: var(--font-family--body);
+    color: white;
+    width: 50vh;
+}
+.cards-para{
+    color: var(--color--gray-4);
+}

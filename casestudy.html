@@ -1,12 +1,17 @@
 <!DOCTYPE html>
+
 <head>
     <title>About Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Inter:regular,500,600,700">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com">
     <link rel="stylesheet" href="/cyber-about/about.css">
+    <link rel="stylesheet" href="/cyber-casestudy/casestudy.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
+
 <body>
     <!-- navbar start -->
     <nav class="navbar">
@@ -14,7 +19,7 @@
             <a href="/cyber-home/home.html"><img src="/cyber-about/images/cyberlogo.svg" class="logo_img" /></a>
             <ul class="navlist">
                 <li><a href="/cyber-home/home.html" class="home">Home</a></li>
-                <li><a href="#" class="about active">About</a></li>
+                <li><a href="/cyber-about/about.html" class="about">About</a></li>
                 <li>
                     <div class="pages-dropdown">
                         <a href="#" class="pages">Pages
@@ -23,8 +28,8 @@
                         <div class="pages-content">
                             <a href="/cyber-home/home.html">Home</a>
                             <a href="#">Home 2</a>
-                            <a href="#">Case Study</a>
-                            <a href="/cyber-about/about.html" class="pages-active">About</a>
+                            <a href="#" class="pages-active">Case Study</a>
+                            <a href="/cyber-about/about.html">About</a>
                             <a href="#">Services</a>
                             <a href="#">Services Static</a>
                             <a href="#">Team</a>
@@ -44,6 +49,69 @@
         </div>
     </nav>
     <!-- navbar end -->
+    <!--templates start -->
+    <div class="templates-card">
+        <a href="#" class="templates-head">
+            <img src="/cyber-about/images/templateslogo.svg" class="templates-logo" />
+            <span class="templates-head">More Templates</span>
+        </a>
+    </div>
+    <!--templates end -->
+    <!-- case container start -->
+    <div class="case-container">
+        <div class="case-head">
+            <h1>Case studies</h1>
+        </div>
+        <div class="case-decoration"></div>
+    </div>
+
+    <!-- case cards start -->
+    <div class="cards-container">
+        <div>
+            <a href="#">
+                <img src="/cyber-casestudy/images/img1.avif" class="card-img" />
+                <h1 class="cards-head">Protecting retail chain customer data</h1>
+                <p class="cards-para">Client: Voltez</p>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <img src="/cyber-casestudy/images/img2.avif" class="card-img" />
+                <h1 class="cards-head">Security of government agency</h1>
+                <p class="cards-para">Client: Logimax</p>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <img src="/cyber-casestudy/images/img3.jpg" class="card-img" />
+                <h1 class="cards-head">Security intellectual property</h1>
+                <p class="cards-para">Client: Maxxel</p>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <img src="/cyber-casestudy/images/img4.avif" class="card-img" />
+                <h1 class="cards-head">Fraud detection for e-commerce plaform</h1>
+                <p class="cards-para">Client: Lexend</p>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <img src="/cyber-casestudy/images/img5.avif" class="card-img" />
+                <h1 class="cards-head">Protecting patient data</h1>
+                <p class="cards-para">Client: Medicia</p>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <img src="/cyber-casestudy/images/img6.avif" class="card-img" />
+                <h1 class="cards-head">Global financial institution</h1>
+                <p class="cards-para">Client: BrightMedia</p>
+            </a>
+        </div>
+    </div>
+    <!-- case cards end -->
+    <!-- case container end -->
     <!-- contact-container-start -->
     <div class="contact-container">
         <div class="container-1">
@@ -62,7 +130,7 @@
                     <div class="pages-inner-wrap">
                         <li><a href="/cyber-home/home.html" class="contact-list">Home</a></li>
                         <li><a href="#" class="contact-list">Home 2</a></li>
-                        <li><a href="#" class="contact-list">Case Study</a></li>
+                        <li><a href="/cyber-casestudy/casestudy.html" class="contact-list">Case Study</a></li>
                         <li><a href="/cyber-about/about.html" class="contact-list">About</a></li>
                         <li><a href="#" class="contact-list">Services</a></li>
                         <li><a href="#" class="contact-list">Service Static</a></li>
@@ -124,4 +192,5 @@
     <!-- footer-end -->
     <script src="script.js"></script>
 </body>
+
 </html>
