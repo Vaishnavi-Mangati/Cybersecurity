@@ -374,9 +374,9 @@ a.active, a:hover{
     border: 1px solid var(--color--gray-3);
     border-radius: 30px;
     margin-bottom: 150px;
-    align-items: center;
-    padding-bottom: 80px; 
-    padding-top: -50px;
+    align-items: center; 
+    padding-bottom: 150px;
+    padding-top: 50px;
 }
 .mission-card{
     font-size: 40px;
@@ -385,10 +385,14 @@ a.active, a:hover{
     position: relative;
     padding-left: 60px;
     padding-right: 60px;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 .mission-head{
     font-size: 50px;
     line-height: 3rem;
+    color: white;
+    font-weight: bold;
 }
 .mission-para{
     font-size: 18px;
@@ -398,6 +402,7 @@ a.active, a:hover{
 .img-wrap{
     position: relative;
     padding: 40px;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;   
@@ -419,6 +424,21 @@ a.active, a:hover{
     filter: blur(100px);
     margin: auto;
     position: absolute;
+}
+@media(max-width:990px){
+    .mission-container{
+        display: grid;
+        overflow:hidden;
+    }
+    .binary-img-logo{
+        width: 70vh;
+    }
+    .img-decoration{
+        width: 50%;
+    }
+    .mission-card{
+        height: auto;
+    }
 }
 /* mission-container-end */
 /* benifits-container-start */
@@ -544,31 +564,38 @@ a.active, a:hover{
     position: absolute;
     inset: 0%;
 }
+@media(max-width:990px){
+    .benifits-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+}
 /* trust-container-start */
 .trust-container{
     padding-top: 150px;
     padding-bottom: 150px;
-    
-    /* margin-left: auto;
-    margin-right: auto; */
     margin: 100px 0;
     margin-right: 20px;
     padding-right: 30px;
+    max-width: 1360px;
+    margin-left: auto;
+    margin-right: auto; 
+    color: var(--color--gray-3);
 }
 
 .trust-container .num-head{
     margin: 20px
 }
 .marquee-container {
-    width: 100%;
     overflow: hidden;
     position: absolute;
     background: var(--color--black);
+    max-width: 1360px;
     display: flex;
     flex-direction: row;
     padding: 20px 0;
     gap: 40px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     color: var(--color--gray-3);
 }
 
@@ -591,7 +618,7 @@ a.active, a:hover{
 }
 .marquee span {
     padding: 15px 30px;
-    border: 1px solid #4d5156;
+    border: 1px solid var(--color--gray-3);
     border-radius: 20px;
 }
 .marquee img{
@@ -600,18 +627,20 @@ a.active, a:hover{
 /* trust-container-end */
 /* team-container-start */
 .team-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
+    display: grid;
+    grid-template-columns: .75fr .75fr .75fr;
+    grid-gap: 40px;
     margin-bottom: 20vh;
     margin-top: 50px;
     margin-left: 100px;
     margin-right: 100px;
 }
+.team-card{
+    text-align: center;
+}
 .team-img{
-    height: 45vh;
     border-radius: 20px;
+    height: 350px;
 }
 .team-head{
     color: white;
@@ -632,6 +661,7 @@ a.active, a:hover{
     position: absolute;
     inset: auto 0% -50px;
 }
+
 /* team-container-end */
 /* contact-container-start */
 .contact-container{
