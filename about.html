@@ -7,6 +7,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nohemi|Inter">
 
 </head>
 
@@ -14,9 +15,9 @@
     <!-- navbar start -->
     <nav class="navbar">
         <div class="navdiv">
-            <a href="#"><img src="images/cyberlogo.svg" class="logo_img" /></a>
+            <a href="/cyber-home/home.html"><img src="images/cyberlogo.svg" class="logo_img" /></a>
             <ul class="navlist">
-                <li><a href="#" class="home">Home</a></li>
+                <li><a href="/cyber-home/home.html" class="home">Home</a></li>
                 <li><a href="#" class="about active">About</a></li>
                 <li>
                     <div class="pages-dropdown">
@@ -24,10 +25,10 @@
                             <i class="fas fa-solid fa-chevron-down"></i>
                         </a>
                         <div class="pages-content">
-                            <a href="#">Home</a>
+                            <a href="/cyber-home/home.html">Home</a>
                             <a href="#">Home 2</a>
-                            <a href="#">Case Study</a>
-                            <a href="#" class="pages-active">About</a>
+                            <a href="/cyber-casestudy/casestudy.html">Case Study</a>
+                            <a href="/cyber-about/about.html" class="pages-active">About</a>
                             <a href="#">Services</a>
                             <a href="#">Services Static</a>
                             <a href="#">Team</a>
@@ -47,15 +48,14 @@
         </div>
     </nav>
     <!-- navbar end -->
-    <!-- more templates start -->
+    <!--templates start -->
     <div class="templates-card">
         <a href="#" class="templates-head">
             <img src="images/templateslogo.svg" class="templates-logo" />
             <span class="templates-head">More Templates</span>
         </a>
     </div>
-
-    <!-- more templates end -->
+    <!--templates end -->
     <div class="aboutsection">
         <!-- cyber-container-start -->
         <div class="cyber-container">
@@ -91,7 +91,7 @@
         <div class="num-container">
             <div>
                 <h1 class="num-head">1,200<span class="num-span">+</span></h1>
-                <p class="cyber-para">Global reach</p>
+                <p class="cyber-para">Clients Protected</p>
             </div>
             <div>
                 <h1 class="num-head">30</h1>
@@ -110,8 +110,8 @@
         <!-- mission-container-start -->
         <div class="mission-container">
             <div class="mission-card">
-                <h2 class="num-head">Our mission</h2>
-                <p class="cyber-para">To provide top-tier cybersecurity solutions that protect businesses and
+                <h2 class="mission-head">Our mission</h2>
+                <p class="mission-para">To provide top-tier cybersecurity solutions that protect businesses and
                     individuals from evolving digital threats.</p>
             </div>
             <div class="img-wrap">
@@ -120,8 +120,8 @@
                 <div class="img-decoration"></div>
             </div>
             <div class="mission-card">
-                <h1 class="num-head">Our vision</h1>
-                <p class="cyber-para">A world where every organization operates securely, free from cyber risks and
+                <h1 class="mission-head">Our vision</h1>
+                <p class="mission-para">A world where every organization operates securely, free from cyber risks and
                     vulnerabilities.</p>
             </div>
         </div>
@@ -231,7 +231,6 @@
         </div>
 
     </div>
-
     <!-- team-container-end -->
     <!-- contact-container-start -->
     <div class="contact-container">
@@ -249,10 +248,10 @@
                 <h1 class="team-head">Pages</h1>
                 <div class="pages-wrap">
                     <div class="pages-inner-wrap">
-                        <li><a href="#" class="contact-list">Home</a></li>
+                        <li><a href="/cyber-home/home.html" class="contact-list">Home</a></li>
                         <li><a href="#" class="contact-list">Home 2</a></li>
                         <li><a href="#" class="contact-list">Case Study</a></li>
-                        <li><a href="#" class="contact-list">About</a></li>
+                        <li><a href="/cyber-about/about.html" class="contact-list">About</a></li>
                         <li><a href="#" class="contact-list">Services</a></li>
                         <li><a href="#" class="contact-list">Service Static</a></li>
                     </div>
@@ -293,7 +292,10 @@
         <div class="contact-text">
             <div>
                 <h1 class="team-head">Stay ahead of cyber threats</h1>
-                <input type="search" placeholder="Enter your email" class="search-box" />
+                <div class="search-wrap">
+                    <input type="text" placeholder="Enter your email" class="search-box">
+                    <input type="button" class="submit-button" value="submit">
+                </div>
             </div>
             <div class="empty-container"></div>
             <div class="awards">
@@ -305,10 +307,12 @@
     <!-- contact-container-end -->
     <!-- footer-start  -->
     <div class="design-section">
-        <p class="design">Design by <span style="text-decoration: underline;">Webestica,</span> Powered by <span
+        <p class="design">Designed by <span style="text-decoration: underline;">Webestica,</span> Powered by <span
                 style="text-decoration: underline;">Webflow</span></p>
         <p class="design">Privacy Policy</p>
     </div>
+    <div class="footer-decoration"></div>
+    <img src="/cyber-about/images/binary.svg" class="footer-img" />
     </div>
     <!-- footer-end -->
     <script src="script.js"></script>
