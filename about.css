@@ -218,6 +218,7 @@ a.active, a:hover{
     margin: 20px;
     font-weight: bold;
     padding: 5px;
+    z-index: 1000;
 }
 .templates-head{
     color: var(--color--black);
@@ -634,13 +635,21 @@ a.active, a:hover{
     margin-top: 50px;
     margin-left: 100px;
     margin-right: 100px;
+    position: relative; 
 }
 .team-card{
     text-align: center;
+    overflow: hidden;
+    border-radius: 20px;
 }
 .team-img{
     border-radius: 20px;
     height: 350px;
+    margin-bottom: 20px;
+    transition: transform 0.8s ease;
+}
+.team-img:hover{
+    transform: scale(1.07);
 }
 .team-head{
     color: white;
@@ -651,25 +660,29 @@ a.active, a:hover{
     color: var(--color--gray-4);
     text-align: center;
 }
-.blur-decoration{
+.team-decoration-one{
     background-image: linear-gradient(180deg, var(--color--primary-2) 40%, var(--color--primary-4));
-    border-radius: 50%;
+    filter: blur(140px);
     width: 50%;
     height: 100px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     position: absolute;
-    inset: auto 0% -50px;
+    inset: auto 0% -50%;
+    overflow: hidden;
 }
-
 /* team-container-end */
 /* contact-container-start */
 .contact-container{
-    max-width: 1360px;
-    margin-right: auto;
-    margin-left: auto;
     padding-left: 30px;
     padding-right: 30px;
+    overflow: hidden;
+    padding-bottom: 30px;
+    position: relative;
+    z-index: 2;
+    border-top: 1px solid var(--color--gray-3);
+    margin-top: 30px;
+    padding-top: 100px;
+    background-color: var(--color--black);
 }
 .container-1{
     grid-column-gap: 20px;
@@ -679,6 +692,9 @@ a.active, a:hover{
     margin-bottom: 150px;
     grid-auto-columns: 1fr;
     display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1360px;
 }
 .card-1{
     grid-row-start: span 1;
@@ -766,6 +782,9 @@ a.active, a:hover{
     grid-auto-columns: 1fr;
     position: relative;
     z-index: 2;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1360px;
 }
 .awards{
     display: grid;
@@ -776,21 +795,36 @@ a.active, a:hover{
     grid-auto-columns: 1fr;
 }
 .footer-logo{
-    padding: 30px;
+    height: 13vh;
 }
 .design-section{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 30px;
+    border-top: 1px solid var(--color--gray-3);
+    margin-top: 30px;
+    padding-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1360px;
 }
 .design{
     color: white;
 }
-.footer-decoration{
-    top: 0%;
+.footer-decoration-one{
+    background-image: linear-gradient(180deg, var(--color--primary-2) 40%, var(--color--primary-4));
+    filter: blur(140px);
+    width: 50%;
+    height: 120px;
+    margin: auto;
     position: absolute;
+    inset: auto 0% -10%;
+    opacity: .8;
+}
+.footer-decoration-two{
+    opacity: .2;
+    margin: auto;
+    position: absolute;
+    inset: auto 0% -35%;
 }
 
